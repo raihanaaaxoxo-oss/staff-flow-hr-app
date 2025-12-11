@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Dashboard</title>
+
+  <link rel="stylesheet" href="stylesheet.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <button id="menu-toggle">☰</button>
+  <h1 class="page-title">StaffFlow</h1> 
+  <button class="logout-btn" onclick="logout()">Logout</button>
+</nav>
+
+<!-- SIDEBAR -->
+<aside class="sidebar">
+  <ul>
+    <li><a href="index.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+    <li><a href="employees.html"><i class="fas fa-users"></i> Employees</a></li>
+    <li><a href="payroll.html"><i class="fas fa-money-bill-wave"></i> Payroll</a></li>
+    <li><a href="attendance.html"><i class="fas fa-calendar-check"></i> Attendance</a></li>
+    <li><a href="timeoff.html"><i class="fas fa-plane-departure"></i> Time Off</a></li>
+    <li><a href="performance_review.html"><i class="fas fa-star"></i> Performance Reviews</a></li>
+  </ul>
+</aside>
+
+
+<!-- MAIN CONTENT -->
+<main class="content">
+  <div class="dashboard-header">
+    <img src="Staff flow pic.png" width="45px" height="45px">
+    <h1>StaffFlow</h1>
+  </div>
+
+<!-- Prominent Notices Section -->
+<section class="dashboard-notices prominent">
+  <h3>📌 Notice Board</h3>
+  <ul>
+    <li>There will be a meeting in the boardroom for all Sales Representatives at 11h45.</li>
+    <li>The male restroom downstairs is under maintenance until further notice so ensure that you make use of the restroom upstairs.</li>
+    <li>Holiday will start on 12 December 2025 and signing out will start at 15h00.</li>
+    <li>Have a Merry Christmas and Happy New Year !!</li>
+  </ul>
+</section>
+
+
+  <!-- Card Grid from second page -->
+  <div class="card-grid">
+
+    <div class="card employees">
+      <h3>Total Employees</h3>
+      <p class="number">24</p>
+    </div>
+
+    <div class="card employee-year">
+      <h3>Employee of the Year</h3>
+      <p class="number">⭐ Sipho Zulu</p>
+    </div>
+
+    <div class="card on-leave">
+      <h3>Employees on Leave</h3>
+      <p class="number">3</p>
+    </div>
+
+  </div>
+
+  <!-- Employee Performance Table -->
+  <div class="card performance-table">
+    <h3>Employee Performance Review</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Employee</th>
+          <th>Department</th>
+          <th>Position</th>
+          <th>Performance Review</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Thabo Molefe</td>
+          <td>QA</td>
+          <td>Quality Analyst</td>
+          <td>Top Analyst</td>
+        </tr>
+        <tr>
+          <td>Lungile Moyo</td>
+          <td>HR</td>
+          <td>HR Manager</td>
+          <td>100% Performance</td>
+        </tr>
+        <tr>
+          <td>Keshav Naidoo</td>
+          <td>Sales</td>
+          <td>Sales Representative</td>
+          <td>Sales Representative of the Year</td>
+        </tr>
+        <tr>
+          <td>Karabo Dlamini</td>
+          <td>Finance</td>
+          <td>Accountant</td>
+          <td>Financially Literate</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</main>
+
+<script src="script.js" defer></script>
+
+</body>
+</html>
+

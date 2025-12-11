@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Employees</title>
+  <link rel="stylesheet" href="stylesheet.css">
+  <link rel="stylesheet" href="employees.css">
+  <link rel="icon" href="Staff flow pic.png"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <button id="menu-toggle">☰</button>
+  <h1 class="page-title">StaffFlow</h1> 
+  <button class="logout-btn" onclick="logout()">Logout</button>
+</nav>
+
+<aside class="sidebar">
+  <ul>
+    <li><a href="index.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+    <li><a href="employees.html"><i class="fas fa-users"></i> Employees</a></li>
+    <li><a href="payroll.html"><i class="fas fa-money-bill-wave"></i> Payroll</a></li>
+    <li><a href="attendance.html"><i class="fas fa-calendar-check"></i> Attendance</a></li>
+    <li><a href="timeoff.html"><i class="fas fa-plane-departure"></i> Time Off</a></li>
+    <li><a href="performance_review.html"><i class="fas fa-star"></i> Performance Reviews</a></li>
+  </ul>
+</aside>
+
+<main class="content">
+  <h2>Employee Directory</h2>
+  <div id="employee-cards" class="cards-container">
+    <!-- Employee cards will be inserted here via JS -->
+  </div>
+
+  <h3>Add Employee</h3>
+  <form id="add-employee-form">
+    <label>Name</label>
+    <input type="text" id="name">
+
+    <label>Email</label>
+    <input type="email" id="email">
+
+    <label>Department</label>
+    <input type="text" id="department">
+
+    <label>Position</label>
+    <input type="text" id="position">
+
+    <label>Salary</label>
+    <input type="number" id="salary">
+
+    <button type="submit">Add Employee</button>
+  </form>
+</main>
+
+<script src="employees.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
