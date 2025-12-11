@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v3.8.6">
+    <title>StaffFlow | Log In</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.4/examples/floating-labels/">
+
+    <!-- Bootstrap core CSS -->
+<link href="/docs/4.4/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Favicons -->
+<link rel="apple-touch-icon" href="/docs/4.4/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/docs/4.4/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/docs/4.4/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/docs/4.4/assets/img/favicons/manifest.json">
+<link rel="mask-icon" href="/docs/4.4/assets/img/favicons/safari-pinned-tab.svg" color="#563d7c">
+<link rel="icon" href="/docs/4.4/assets/img/favicons/favicon.ico">
+<meta name="msapplication-config" content="/docs/4.4/assets/img/favicons/browserconfig.xml">
+<meta name="theme-color" content="#563d7c">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;  
+    align-items: center;       
+    background-color: #5264f1; 
+      }
+
+      .logo {
+    display: block;
+    margin: 0 auto;
+      }
+
+      h1, p, label, .text-muted, .checkbox label {
+    color: white !important;
+    text-align: center;
+    }
+
+    h1 {
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    }
+
+    p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    }
+
+    label {
+    font-size: 1.2rem;
+    }
+
+    .btn-primary {
+    background-color: #1d4ed8;   
+    border-color: #1d4ed8;
+    color: white;
+    padding: 10px
+}
+
+.btn-primary:hover {
+    background-color: grey;      
+    border-color: grey;
+    color: white;
+}
+
+.btn-primary:active {
+    background-color: #4b5563 !important;  
+    border-color: #4b5563 !important;
+}
+
+button, a, input[type="checkbox"] {
+    cursor: pointer;
+
+}
+
+.form-control {
+    width: 300px;    
+    height: 20px;    
+    font-size: 16px; 
+    text-align: center;
+}
+
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="floating-labels.css" rel="stylesheet">
+  </head>
+  <body>
+    <form class="form-signin" id="loginForm">
+  <div class="text-center mb-4">
+    <img class="mb-4" src="Staff flow pic.png" alt="" width="500rem" height="350rem">
+    <h1 class="h3 mb-3 font-weight-normal">Login</h1>
+    <p>Welcome to the StaffFlow HR Login.</p>
+  </div>
+
+  <div class="form-label-group">
+    <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required="" autofocus="" fdprocessedid="5mdij">
+    <label for="inputEmail">Email address</label>
+  </div>
+
+  <div class="form-label-group">
+    <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="" fdprocessedid="6zh9rp">
+    <label for="inputPassword">Password</label>
+  </div>
+
+  <div class="checkbox mb-3">
+    <label>
+      <input type="checkbox" value="remember-me"> Remember me
+    </label>
+  </div>
+  
+  <button class="btn btn-lg btn-primary btn-block" type="submit" fdprocessedid="5vt02">Sign in</button>
+  <p class="mt-5 mb-3 text-muted text-center">© Staff Flow | Life Choices 2025</p>
+</form>
+
+
+<span id="PING_IFRAME_FORM_DETECTION" style="display: none;"></span>
+
+<script>
+    const validUsers = [
+    {username: "sibongile.nkosi@moderntech", password: "table_tennis123"},
+    {username: "thabo.molefe@moderntech.com", password: "mountainView!"},
+    {username: "sipho.zulu@moderntech.com", password: "password2468"},
+    {username: "lungile.moyo@moderntech.com", password: "table_tennis123"},
+    {username: "keshav.naidoo@moderntech.com", password: "mountainView!"},
+    {username: "zanele.khumalo@moderntech.com", password: "password2468"},
+    {username: "naledi.moeketsi@moderntech.com", password: "password2468"},
+    {username: "farai.gumbo@moderntech.com", password: "table_tennis123"},
+    {username: "karabo.dlamini@moderntech.com", password: "mountainView!"},
+    {username: "fatima.patel@moderntech.com", password: "password2468"},
+];
+
+const form = document.getElementById("loginForm");
+
+form.addEventListener("submit", function(e) {
+    e.preventDefault(); 
+
+    const email = document.getElementById("inputEmail").value;
+    const password = document.getElementById("inputPassword").value;
+
+    const user = validUsers.find(u => u.username === email && u.password === password);
+
+    if (user) {
+        window.location.href = "index.html";
+    } else {
+        alert("Invalid email or password. Please try again.");
+    }
+});
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payroll</title>
+    <link rel="stylesheet" href="stylesheet.css">
+     <link rel="icon" href="Staff flow pic.png"/>
+    <link rel="stylesheet" href="payroll.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <button id="menu-toggle">☰</button>
+    <h1 class="page-title">StaffFlow</h1>
+    <button class="logout-btn" onclick="logout()">Logout</button>
+</nav>
+
+<aside class="sidebar">
+  <ul>
+    <li><a href="index.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+    <li><a href="employees.html"><i class="fas fa-users"></i> Employees</a></li>
+    <li><a href="payroll.html"><i class="fas fa-money-bill-wave"></i> Payroll</a></li>
+    <li><a href="attendance.html"><i class="fas fa-calendar-check"></i> Attendance</a></li>
+    <li><a href="timeoff.html"><i class="fas fa-plane-departure"></i> Time Off</a></li>
+    <li><a href="performance_review.html"><i class="fas fa-star"></i> Performance Reviews</a></li>
+  </ul>
+</aside>
+
+<main class="content">
+    <h2>Payroll</h2>
+    <p>Below are the payslips for all employees:</p>
+
+    <div id="payslip-container"></div>
+</main>
+
+<script src="payroll.js" defer></script>
+<script src="script.js"></script>
+
+</body>
+</html>
+
