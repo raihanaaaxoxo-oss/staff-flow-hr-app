@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Performance Reviews</title>
+  <link rel="stylesheet" href="stylesheet.css">
+   <link rel="icon" href="Staff flow pic.png"/>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <button id="menu-toggle">☰</button>
+  <h1 class="page-title">StaffFlow</h1> 
+  <button class="logout-btn" onclick="logout()">Logout</button>
+</nav>
+
+<aside class="sidebar">
+  <ul>
+    <li><a href="index.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+    <li><a href="employees.html"><i class="fas fa-users"></i> Employees</a></li>
+    <li><a href="payroll.html"><i class="fas fa-money-bill-wave"></i> Payroll</a></li>
+    <li><a href="attendance.html"><i class="fas fa-calendar-check"></i> Attendance</a></li>
+    <li><a href="timeoff.html"><i class="fas fa-plane-departure"></i> Time Off</a></li>
+    <li><a href="performance_review.html"><i class="fas fa-star"></i> Performance Reviews</a></li>
+  </ul>
+</aside>
+
+<main class="content">
+  <h2>Employee Performance Reviews</h2>
+
+  <h3>Submit a Review</h3>
+  <form id="review-form">
+    <label>Employee</label>
+    <select id="employee-select"></select>
+
+    <label>Review Period</label>
+    <input type="text" placeholder="e.g., Jan 2025 – Dec 2025" id="review-period">
+
+    <label>Overall Rating (1–5)</label>
+    <input type="number" min="1" max="5" id="overall-rating">
+
+    <label>Strengths</label>
+    <textarea placeholder="List strengths..." id="strengths"></textarea>
+
+    <label>Areas for Improvement</label>
+    <textarea placeholder="List areas for development..." id="improvements"></textarea>
+
+    <label>Manager Comments</label>
+    <textarea placeholder="Enter comments..." id="comments"></textarea>
+
+    <button type="submit">Submit Review</button>
+  </form>
+
+  <hr>
+
+  <h3>Employee Reviews</h3>
+  <div id="reviews-container"></div>
+</main>
+
+<script src="performance_review.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
