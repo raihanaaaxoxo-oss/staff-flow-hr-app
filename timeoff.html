@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Time Off</title>
+  <link rel="stylesheet" href="stylesheet.css">
+  <link rel="icon" href="Staff flow pic.png"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <button id="menu-toggle">☰</button>
+  <h1 class="page-title">StaffFlow</h1> 
+  <button class="logout-btn" onclick="logout()">Logout</button>
+</nav>
+
+<aside class="sidebar">
+  <ul>
+    <li><a href="index.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+    <li><a href="employees.html"><i class="fas fa-users"></i> Employees</a></li>
+    <li><a href="payroll.html"><i class="fas fa-money-bill-wave"></i> Payroll</a></li>
+    <li><a href="attendance.html"><i class="fas fa-calendar-check"></i> Attendance</a></li>
+    <li><a href="timeoff.html"><i class="fas fa-plane-departure"></i> Time Off</a></li>
+    <li><a href="performance_review.html"><i class="fas fa-star"></i> Performance Reviews</a></li>
+  </ul>
+</aside>
+
+<main class="content">
+  <h2>Leave Requests Overview</h2>
+
+  <!-- 1. Sibongile Nkosi -->
+  <section class="employee-leave">
+    <h3>Sibongile Nkosi</h3>
+    <table>
+      <thead><tr><th>Date</th><th>Reason</th><th>Status</th></tr></thead>
+      <tbody>
+        <tr><td>2025-07-22</td><td>Sick Leave</td><td>Approved</td></tr>
+        <tr><td>2024-12-01</td><td>Personal</td><td>Pending</td></tr>
+      </tbody>
+    </table>
+    <p><strong>Total Leave Days Used:</strong> 2</p>
+    <p><strong>Remaining Leave Days:</strong> 18</p>
+  </section>
+
+  <!-- 2. Lungile Moyo -->
+  <section class="employee-leave">
+    <h3>Lungile Moyo</h3>
+    <table>
+      <thead><tr><th>Date</th><th>Reason</th><th>Status</th></tr></thead>
+      <tbody>
+        <tr><td>2025-07-15</td><td>Family Responsibility</td><td>Denied</td></tr>
+        <tr><td>2024-12-02</td><td>Vacation</td><td>Approved</td></tr>
+      </tbody>
+    </table>
+    <p><strong>Total Leave Days Used:</strong> 1</p>
+    <p><strong>Remaining Leave Days:</strong> 19</p>
+  </section>
+
+  <!-- 3. Thabo Molefe -->
+  <section class="employee-leave">
+    <h3>Thabo Molefe</h3>
+    <table>
+      <thead><tr><th>Date</th><th>Reason</th><th>Status</th></tr></thead>
+      <tbody>
+        <tr><td>2025-07-10</td><td>Medical Appointment</td><td>Approved</td></tr>
+        <tr><td>2024-12-05</td><td>Personal</td><td>Pending</td></tr>
+      </tbody>
+    </table>
+    <p><strong>Total Leave Days Used:</strong> 1</p>
+    <p><strong>Remaining Leave Days:</strong> 19</p>
+  </section>
+
+  <!-- 4. Keshav Naidoo -->
+  <section class="employee-leave">
+    <h3>Keshav Naidoo</h3>
+    <table>
+      <thead><tr><th>Date</th><th>Reason</th><th>Status</th></tr></thead>
+      <tbody>
+        <tr><td>2025-07-20</td><td>Bereavement</td><td>Approved</td></tr>
+      </tbody>
+    </table>
+    <p><strong>Total Leave Days Used:</strong> 1</p>
+    <p><strong>Remaining Leave Days:</strong> 19</p>
+  </section>
+
+  <!-- 5. Zanele Khumalo -->
+  <section class="employee-leave">
+    <h3>Zanele Khumalo</h3>
+    <table>
+      <thead><tr><th>Date</th><th>Reason</th><th>Status</th></tr></thead>
+      <tbody>
+        <tr><td>2024-12-01</td><td>Childcare</td><td>Pending</td></tr>
+      </tbody>
+    </table>
+    <p><strong>Total Leave Days Used:</strong> 0</p>
+    <p><strong>Remaining Leave Days:</strong> 20</p>
+  </section>
+
+  <!-- 6. Sipho Zulu -->
+  <section class="employee-leave">
+    <h3>Sipho Zulu</h3>
+    <table>
+      <thead><tr><th>Date</th><th>Reason</th><th>Status</th></tr></thead>
+      <tbody>
+        <tr><td>2025-07-18</td><td>Sick Leave</td><td>Approved</td></tr>
+      </tbody>
+    </table>
+    <p><strong>Total Leave Days Used:</strong> 1</p>
+    <p><strong>Remaining Leave Days:</strong> 19</p>
+  </section>
+
+  <!-- 7. Naledi Moeketsi -->
+  <section class="employee-leave">
+    <h3>Naledi Moeketsi</h3>
+    <table>
+      <thead><tr><th>Date</th><th>Reason</th><th>Status</th></tr></thead>
+      <tbody>
+        <tr><td>2025-07-22</td><td>Vacation</td><td>Pending</td></tr>
+      </tbody>
+    </table>
+    <p><strong>Total Leave Days Used:</strong> 0</p>
+    <p><strong>Remaining Leave Days:</strong> 20</p>
+  </section>
+
+  <!-- 8. Farai Gumbo -->
+  <section class="employee-leave">
+    <h3>Farai Gumbo</h3>
+    <table>
+      <thead><tr><th>Date</th><th>Reason</th><th>Status</th></tr></thead>
+      <tbody>
+        <tr><td>2024-12-02</td><td>Medical Appointment</td><td>Approved</td></tr>
+      </tbody>
+    </table>
+    <p><strong>Total Leave Days Used:</strong> 1</p>
+    <p><strong>Remaining Leave Days:</strong> 19</p>
+  </section>
+
+  <!-- 9. Karabo Dlamini -->
+  <section class="employee-leave">
+    <h3>Karabo Dlamini</h3>
+    <table>
+      <thead><tr><th>Date</th><th>Reason</th><th>Status</th></tr></thead>
+      <tbody>
+        <tr><td>2025-07-19</td><td>Childcare</td><td>Denied</td></tr>
+      </tbody>
+    </table>
+    <p><strong>Total Leave Days Used:</strong> 0</p>
+    <p><strong>Remaining Leave Days:</strong> 20</p>
+  </section>
+
+  <!-- 10. Fatima Patel -->
+  <section class="employee-leave">
+    <h3>Fatima Patel</h3>
+    <table>
+      <thead><tr><th>Date</th><th>Reason</th><th>Status</th></tr></thead>
+      <tbody>
+        <tr><td>2024-12-03</td><td>Vacation</td><td>Pending</td></tr>
+      </tbody>
+    </table>
+    <p><strong>Total Leave Days Used:</strong> 0</p>
+    <p><strong>Remaining Leave Days:</strong> 20</p>
+  </section>
+
+  <!-- Leave Request Form -->
+  <hr>
+  <h3>Request Time Off</h3>
+  <form>
+    <label>Employee</label>
+    <input type="text">
+
+    <label>Start Date</label>
+    <input type="date">
+
+    <label>End Date</label>
+    <input type="date">
+
+    <label>Reason</label>
+    <textarea></textarea>
+
+    <button type="submit">Submit</button>
+  </form>
+
+<script src="script.js"></script>
+
+</main>
+</body>
+</html>
